@@ -62,4 +62,5 @@ button {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  margin: 10px auto;
 }

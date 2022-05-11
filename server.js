@@ -2,10 +2,11 @@ const express = require("express");
 const home = require("./routes/home.js");
 
 const server = express();
-server.get('/', home.get)
 
 const staticHandler = express.static("public");
 server.use(staticHandler);
+
+server.get("/", home.get);
 
 server.get("/", (request, response) => {
   response.send(`
