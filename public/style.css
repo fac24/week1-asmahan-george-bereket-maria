@@ -5,6 +5,7 @@ body {
   background-color: rgb(252, 233, 210);
 }
 
+/* Two colours for the header */
 h1 {
   font-family: "Nunito", sans-serif;
   color: orangered;
@@ -12,6 +13,7 @@ h1 {
 }
 
 .green {
+  /* Include inside the h1 (in a span)*/
   color: green;
 }
 
@@ -19,6 +21,8 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
 }
+
+/* Styling for buttons */
 
 button {
   border: none;
@@ -37,10 +41,16 @@ button {
 
 .delete {
   background-color: red;
+  align-self: flex-end;
 }
 
+/* Containers for the blog posts */
+
 .blog-post {
+  /* Put blog text and button inside a div with this class */
   border: 2.5px solid rgb(0, 0, 164);
   border-radius: 20px;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
