@@ -1,0 +1,26 @@
+{
+  "name": "week1-asmahan-george-bereket-maria",
+  "version": "1.0.0",
+  "description": "A microblogging site",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac24/week1-asmahan-george-bereket-maria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac24/week1-asmahan-george-bereket-maria/issues"
+  },
+  "homepage": "https://github.com/fac24/week1-asmahan-george-bereket-maria#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.16"
+  }
+}
