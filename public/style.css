@@ -1,20 +1,29 @@
+:root {
+  --orange: #c43500;
+  --green: #007b00;
+  --off-white: rgb(252, 233, 210);
+  --pink: rgb(255, 0, 98);
+  --dark-blue: rgb(0, 0, 164);
+  --red: red;
+}
+
 body {
   max-width: 700px;
   padding: 1em 1.5em;
   margin: 0 auto;
-  background-color: rgb(252, 233, 210);
+  background-color: var(--offwhite);
 }
 
 /* Two colours for the header */
 h1 {
   font-family: "Nunito", sans-serif;
-  color: orangered;
+  color: var(--orange);
   font-size: 3.5em;
 }
 
 .green {
   /* Include inside the h1 (in a span)*/
-  color: green;
+  color: var(--green);
 }
 
 p {
@@ -36,11 +45,11 @@ button {
 }
 
 .submit {
-  background-color: rgb(255, 0, 98);
+  background-color: var(--pink);
 }
 
 .delete {
-  background-color: red;
+  background-color: var(--red);
   align-self: flex-end;
 }
 
@@ -48,7 +57,7 @@ button {
 
 .blog-post {
   /* Put blog text and button inside a div with this class */
-  border: 2.5px solid rgb(0, 0, 164);
+  border: 2.5px solid var(--dark-blue);
   border-radius: 20px;
   padding: 10px;
   display: flex;
