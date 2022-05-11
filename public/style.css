@@ -12,13 +12,19 @@ body {
   padding: 1em 1.5em;
   margin: 0 auto;
   background-color: var(--offwhite);
+  font-family: "Roboto", sans-serif;
 }
 
 /* Two colours for the header */
-h1 {
+h1,
+h2 {
   font-family: "Nunito", sans-serif;
   color: var(--orange);
   font-size: 3.5em;
+}
+
+h2 {
+  margin: 0;
 }
 
 .green {
@@ -59,7 +65,7 @@ button {
   /* Put blog text and button inside a div with this class */
   border: 2.5px solid var(--darkblue);
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   margin: 10px auto;

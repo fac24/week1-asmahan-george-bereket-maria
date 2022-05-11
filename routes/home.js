@@ -28,7 +28,7 @@ function get(request, response) {
       <body>
         <div>
             <header>
-                <h2>Posts</h2>
+                <h2>Pos<span class="green">ts</span></h2>
             </header>
             ${posts}
         </div>
