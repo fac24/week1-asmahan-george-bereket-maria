@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(252, 233, 210);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  color: orangered;
+  font-size: 3.5em;
+}
+
+.green {
+  color: green;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
