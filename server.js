@@ -1,66 +1,36 @@
 const express = require("express");
+const home = require("./routes/home.js");
+
 const server = express();
+
 const staticHandler = express.static("public");
 server.use(staticHandler);
 
-//array of messages
-
-let messagesList = "";
-let message = "";
-let messagesArray = [
-  {username: "", message: ""}
-]
+server.get('/', home.get);
 
 server.get("/", (request, response) => {
-messageList = "";
-  
-  messagesArray.forEach((post) => {
-    message  = `<li>
-    <p>User: ${post["username"]} </p>
-    <p>Message ${post["message"]}</p>
+  response.send(`
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crocspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+  <h1>hel<span class="green">lo</span></h1>
+  </body>
+</html>
 
-    <form action="/delete-posts" method="POST">
-    <button name="${post["username"]}" value="${post["message"]} <form>
-    </li>`;
-
-messageList += message;
+  `);
 });
 
-  const crocsForm = 
-`<form action="/crocspace-comments" method="POST">
-<label for="username">User:</label>
-<input type="text" id="username" placeholder="username" name="name"><br>
-<label for="usermessage">Message:</label>
-<input type="text" id="usermessage" placeholder="enter message" message="message"><br>       
-<input type="Submit" required value="Submit"></button>
-</form>`;
-
-
-  const html = 
- ` <!doctype html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>crocspace</title>
-    </head>
-    <body>
-    <h1>A safe space for fans of crocs</h1>
-    ${crocsForm}
-    </body>
-  </html>`
-  ;
-  response.send(html)
-});
-  
-const bodyParser = express.urlencoded();
-
-
-  const PORT = 3335;
-  server.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
-
-  server.post("/crocspace-comments", bodyParser, (request, response) => {
-    const name = Object.keys(request.body)[0];
-    const message = Object.values(request.body)[0];
-
-    response.redirect("/");
-});
+const PORT = 3000;
+server.listen(PORT, () =>
+  console.log(`Listening on http://localhost:${PORT} `)
+);
