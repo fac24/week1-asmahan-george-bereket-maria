@@ -7,11 +7,9 @@ function get(request, response) {
 <input type="text" id="username" placeholder="username" name="name"><br>
 <label for="usermessage">Message:</label>
 <input type="text" id="usermessage" placeholder="enter message" message="message"><br>       
-<input type="Submit" required value="Submit"></button>
+<button class="submit" type="submit" required>Submit</button>
 </form>`;
-  
-  
-  
+
   let posts = "";
 
   let index = -1;
