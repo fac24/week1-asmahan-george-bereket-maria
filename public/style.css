@@ -5,6 +5,7 @@
   --pink: rgb(255, 0, 98);
   --darkblue: rgb(0, 0, 164);
   --red: red;
+  --yellow: rgb(251, 232, 27);
 }
 
 body {
@@ -63,10 +64,33 @@ button {
 
 .blog-post {
   /* Put blog text and button inside a div with this class */
-  border: 2.5px solid var(--darkblue);
   border-radius: 20px;
   padding: 5px;
   display: flex;
   justify-content: space-between;
   margin: 10px auto;
+}
+
+.blue {
+  border: 3px solid var(--darkblue);
+}
+
+.pink {
+  border: 3px solid var(--pink);
+}
+
+.red {
+  border: 3px solid var(--red);
+}
+
+.orange {
+  border: 3px solid var(--orange);
+}
+
+.yellow {
+  border: 3px solid var(--yellow);
+}
+
+.green {
+  border: 3px solid var(--green);
 }

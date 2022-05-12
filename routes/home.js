@@ -1,5 +1,5 @@
 const blogPosts = require("../blogPosts.js");
-const colours = require("./colours.js");
+const colours = require("../public/colours.js");
 
 const express = require("express");
 const server = express();
