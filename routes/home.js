@@ -2,16 +2,16 @@ const blogPosts = require("../blogPosts.js");
 const colours = require("../public/colours.js");
 
 function get(request, response) {
-  const crocsForm = `<form action="/crocspace-comments" method="POST">
-<label for="username">User:</label>
-<input type="text" id="username" placeholder="username" name="name"><br>
+  const crocsForm = `<div class="form-div">
+  <form action="/crocspace-comments" method="POST">
+<label for="username">Username:</label>
+<input type="text" id="username" placeholder="username" name="name" class="usernamebox"><br>
 <label for="usermessage">Message:</label>
-<input type="text" id="usermessage" placeholder="enter message" message="message"><br>       
-<input type="Submit" required value="Submit"></button>
-</form>`;
-  
-  
-  
+<input type="text" id="usermessage" placeholder="enter message" message="message" class="messagebox"> <br/>    
+<button class="submit" type="submit" required aria-label"submit post">Submit</button>
+</form>
+</div>`;
+
   let posts = "";
 
   let index = -1;
@@ -30,17 +30,19 @@ function get(request, response) {
             <h3>${post.user}</h3>
             <p>${post.message}</p>
           </div>
+          <div class="button-div">
           <form action="/delete-post" method="POST">
             <button class="delete" name="name" value="${postKey}" aria-label="Delete ${postKey}">
               Delete
             </button>
           </form>
+          </div>
         </div>
         `;
   }
   const html = `
     <!doctype html>
-    <html>
+    <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -53,7 +55,7 @@ function get(request, response) {
   </head>
       <body>
         <div>
-            <h1>Leave a message!</h1>
+            <h1>Lea<span class="greentext">ve</span> a mess<span class="greentext">age!</span></h1>
             ${crocsForm}
             <header>
                 <h2>Pos<span class="greentext">ts</span></h2>
