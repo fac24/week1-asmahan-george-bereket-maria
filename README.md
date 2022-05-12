@@ -17,7 +17,7 @@
 ---
 
 ## 🧑‍🤝‍🧑To use the application as a user:
-https://crocspace-blog.herokuapp.com/
+https://crocsblog.herokuapp.com/
 
 ---
 
