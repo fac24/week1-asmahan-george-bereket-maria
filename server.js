@@ -1,18 +1,18 @@
 const express = require("express");
 const home = require("./routes/home.js");
-const deletePost = require("./routes/deletePost.js")
+const deletePost = require("./routes/deletePost")
 
 const server = express();
 
 const staticHandler = express.static("public");
 server.use(staticHandler);
 
-const bodyParser = express.urlencoded({ extended: false });
+server.get('/', home.get);
 
-server.get("/", home.get);
+const bodyParser = express.urlencoded({extended: false})
 
+server.post("/delete-post", bodyParser, deletePost.post)
 
-server.post("/delete-post", bodyParser, deletePost.post);
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () =>
