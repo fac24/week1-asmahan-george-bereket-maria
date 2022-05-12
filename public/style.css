@@ -89,6 +89,9 @@ button {
 
 .delete {
   background-color: var(--red);
+}
+
+.button-div {
   align-self: flex-end;
 }
 
