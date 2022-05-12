@@ -21,16 +21,16 @@ h1,
 h2 {
   font-family: "Nunito", sans-serif;
   color: var(--orange);
-  font-size: 3.5em;
 }
 
-h2 {
-  margin: 0;
-}
-
+h2,
 h3 {
   padding: 0;
   margin: 5px auto;
+}
+
+header {
+  margin-block-start: 2.2em;
 }
 
 .greentext {
