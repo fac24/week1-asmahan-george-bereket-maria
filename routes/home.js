@@ -7,9 +7,20 @@ server.use(staticHandler);
 
 function get(request, response) {
   let posts = "";
-  for (const post of Object.values(blogPosts)) {
+  for (const postKey in blogPosts) {
+    post = blogPosts[postKey]
     posts += `
-        <div class="blog-post"><div><h3>${post.user}</h3> <p>${post.message}</p></div><button class="delete">delete</button></div>
+        <div class="blog-post">
+          <div>
+            <h3>${post.user}</h3>
+            <p>${post.message}</p>
+          </div>
+          <form action="/delete-post" method="POST">
+            <button class="delete" name="name" value="${postKey}" aria-label="Delete ${postKey}">
+              Delete
+            </button>
+          </form>
+        </div>
         `;
   }
   const html = `
