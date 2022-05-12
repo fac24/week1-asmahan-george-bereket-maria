@@ -1,6 +1,18 @@
 # 🐊 crocspace: a microblogging site 👡 
 
-*whether you love 'em or hate 'em!*
+*Crocs, whether you love 'em or hate 'em. This is the place to write about them!*
+
+---
+
+## Project features: 
+- 🖥️ A server run application
+- 📜 A page with a form to submit posts
+- ✒️ No .html files (all HTML responses have been dynamically within Node)
+- 🧮 No client-side JavaScript (all logic happens happen on the server)
+- 🎨 Static CSS and styling related files
+- ✅ Testing run on Cypress
+- 📱A responsive, mobile-first design
+- ☮️ Accessability checks to ensure app is available to different users
 
 ---
 
