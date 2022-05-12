@@ -1,14 +1,21 @@
 const blogPosts = require("../blogPosts.js");
 const colours = require("../public/colours.js");
 
-const express = require("express");
-const server = express();
-const staticHandler = express.static("public");
-server.use(staticHandler);
-
 function get(request, response) {
+  const crocsForm = `<form action="/crocspace-comments" method="POST">
+<label for="username">User:</label>
+<input type="text" id="username" placeholder="username" name="name"><br>
+<label for="usermessage">Message:</label>
+<input type="text" id="usermessage" placeholder="enter message" message="message"><br>       
+<input type="Submit" required value="Submit"></button>
+</form>`;
+  
+  
+  
   let posts = "";
+
   let index = -1;
+
   for (const postKey in blogPosts) {
     if (index < colours.length) {
       index++;
@@ -17,6 +24,7 @@ function get(request, response) {
     }
     post = blogPosts[postKey];
     posts += `
+
         <div class="blog-post ${colours[index]}">
           <div>
             <h3>${post.user}</h3>
@@ -53,6 +61,7 @@ function get(request, response) {
       </body>
     </html>
     `;
+
   response.send(html);
 }
 
