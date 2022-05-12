@@ -25,7 +25,7 @@ https://crocsblog.herokuapp.com/
 
 - Get the files `git clone https://github.com/fac24/week1-asmahan-george-bereket-maria.git`
 - Make sure you go inside the repo folder `cd <the-repo-folder>`
-- Install dependencies to get your server runnning! `npm install` 
+- Install dependencies to get your server running! `npm install` 
 - Start the server `npm run dev`
 - Go on to http://localhost:3000 to visit the app
 
