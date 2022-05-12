@@ -8,8 +8,8 @@ server.use(staticHandler);
 
 function get(request, response) {
   let posts = "";
+  let index = -1;
   for (const postKey in blogPosts) {
-    let index = -1;
     if (index < colours.length) {
       index++;
     } else {
@@ -17,7 +17,7 @@ function get(request, response) {
     }
     post = blogPosts[postKey];
     posts += `
-        <div class="blog-post">
+        <div class="blog-post ${colours[index]}">
           <div>
             <h3>${post.user}</h3>
             <p>${post.message}</p>
@@ -46,7 +46,7 @@ function get(request, response) {
       <body>
         <div>
             <header>
-                <h2>Pos<span class="green">ts</span></h2>
+                <h2>Pos<span class="greentext">ts</span></h2>
             </header>
             ${posts}
         </div>

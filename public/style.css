@@ -28,7 +28,12 @@ h2 {
   margin: 0;
 }
 
-.green {
+h3 {
+  padding: 0;
+  margin: 5px auto;
+}
+
+.greentext {
   /* Include inside the h1 (in a span)*/
   color: var(--green);
 }
