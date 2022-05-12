@@ -1,4 +1,5 @@
 const blogPosts = require("../blogPosts.js");
+const colours = require("./colours.js");
 
 const express = require("express");
 const server = express();
@@ -8,7 +9,13 @@ server.use(staticHandler);
 function get(request, response) {
   let posts = "";
   for (const postKey in blogPosts) {
-    post = blogPosts[postKey]
+    let index = -1;
+    if (index < colours.length) {
+      index++;
+    } else {
+      index = 0;
+    }
+    post = blogPosts[postKey];
     posts += `
         <div class="blog-post">
           <div>
