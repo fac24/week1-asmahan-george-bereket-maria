@@ -38,9 +38,34 @@ h3 {
   color: var(--green);
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+p,
+label {
+  display: inline-block;
   font-weight: bolder;
+}
+
+/* Input form */
+
+label {
+  width: 4.5em;
+  margin-inline-start: 10px;
+}
+
+input {
+  background-color: var(--offwhite);
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.usernamebox {
+  width: 16em;
+}
+
+.messagebox {
+  width: 95%;
+  height: 2.5em;
 }
 
 /* Styling for buttons */
@@ -58,6 +83,8 @@ button {
 
 .submit {
   background-color: var(--pink);
+  float: right;
+  margin: 5px 10px;
 }
 
 .delete {
