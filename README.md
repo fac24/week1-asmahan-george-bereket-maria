@@ -36,6 +36,16 @@ To run tests:
 -  *Edit the test.js file to make your own tests*
 -  *Have the server running in one terminal and cypress in another for optimal productivity!*
 
+--- 
+
+### Application screenshots:
+*Desktop & mobile*
+
+<img height="300" alt="desktop" src="https://user-images.githubusercontent.com/82417131/168278682-7759498f-71e9-47de-bf3b-380f18af3165.png">    <img height="300" alt="phone" src="https://user-images.githubusercontent.com/82417131/168278786-0d330c5b-2756-4c8e-83ae-71c0cdfb6614.png">
+
+
+
+
 
 
 
