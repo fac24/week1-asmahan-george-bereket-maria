@@ -11,7 +11,7 @@ function get(request, response) {
       <input type="text" id="username" placeholder="username" name="user" class="usernamebox"><br>
       <label for="usermessage">Message:</label>
       <input type="text" id="usermessage" placeholder="enter message" name="message" class="messagebox"><br>       
-      <input type="Submit" value="Submit"></button>
+      <button type="Submit" value="Submit" class="submit">Submit</button>
     </form>
   `;
   
