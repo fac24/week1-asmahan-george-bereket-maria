@@ -21,16 +21,16 @@ h1,
 h2 {
   font-family: "Nunito", sans-serif;
   color: var(--orange);
-  font-size: 3.5em;
 }
 
-h2 {
-  margin: 0;
-}
-
+h2,
 h3 {
   padding: 0;
   margin: 5px auto;
+}
+
+header {
+  margin-block-start: 2.2em;
 }
 
 .greentext {
@@ -38,9 +38,34 @@ h3 {
   color: var(--green);
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+p,
+label {
+  display: inline-block;
   font-weight: bolder;
+}
+
+/* Input form */
+
+label {
+  width: 4.5em;
+  margin-inline-start: 10px;
+}
+
+input {
+  background-color: var(--offwhite);
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.usernamebox {
+  width: 16em;
+}
+
+.messagebox {
+  width: 95%;
+  height: 2.5em;
 }
 
 /* Styling for buttons */
@@ -58,10 +83,15 @@ button {
 
 .submit {
   background-color: var(--pink);
+  float: right;
+  margin: 5px 10px;
 }
 
 .delete {
   background-color: var(--red);
+}
+
+.button-div {
   align-self: flex-end;
 }
 
