@@ -1,0 +1,29 @@
+# Project Report 
+
+## Intro
+We have built a microblogging application. This has been built dynamically and created to run on a server. Users can submit their username and a post, read other users' posts and delete posts.
+
+This was built to put into practice the topics covered in the first week of Founders and Coders' full time course- Express, Node.js, nodemon, Cypress.
+
+## Project Scope
+We are not building an application that has a character limit or enables commenting under other users' posts.  At present, the app allows you to post a message but not interact with others. This is a possible stretch goal to improve the user experience.
+
+We decided which features would be most important to implement by focusing on the user journey and ensuring the appliation has sufficient functionality. 
+
+## Project Plan
+We started by initialising the repository and setting up the server. 
+
+We then divided the work and worked individually. When the structure of the application came together, we moved onto functionality. At this stage, we began paired-programing to tackle bugs and issues, moved onto styling and finally, testing.
+
+## Requirement Analysis
+We ran a lighthouse test to get a report on how responsive and accessible our application is. Issues were then created according to what needed to be improved. 
+
+## Project Learnings
+Code reviews addressed some helpful issues regarding accessibility. We reviewed our labels following the issues raised.
+
+Our team was supportive, helpful and we communicated well.
+
+## Recommendations and conclusions
+We could dedicate more time to testing as this was the last thing we worked on and we ran into a few errors (which were addressed!)
+
+The project was successful- the app is functional and we all learned a lot on the way :D
