@@ -2,16 +2,15 @@ const blogPosts = require("../blogPosts.js");
 const colours = require("../public/colours.js");
 
 function get(request, response) {
-  const crocsForm = `<div class="form-div">
-  <form action="/crocspace-comments" method="POST">
-<label for="username">Username:</label>
-<input type="text" id="username" placeholder="username" name="name" class="usernamebox"><br>
-<label for="usermessage">Message:</label>
-<input type="text" id="usermessage" placeholder="enter message" message="message" class="messagebox"> <br/>    
-<button class="submit" type="submit" required aria-label"submit post">Submit</button>
-</form>
-</div>`;
 
+  const crocsForm = `<form action="/crocspace-comments" method="POST">
+<label for="username">User:</label>
+<input type="text" id="username" placeholder="username" name="user"><br>
+<label for="usermessage">Message:</label>
+<input type="text" id="usermessage" placeholder="enter message" name="message"><br>       
+<input type="Submit" value="Submit"></button>
+</form>`;
+  
   let posts = "";
 
   let index = -1;
